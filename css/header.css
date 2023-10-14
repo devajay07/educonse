@@ -1,9 +1,9 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "brand-bold";
   src: url("/fonts/brand-bold.otf") format("opentype");
@@ -71,210 +71,6 @@ nav a {
   text-decoration: none;
   color: white;
 }
-
-.card {
-  color: white;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 24px;
-}
-
-section#cta {
-  text-align: center;
-  padding: 40px 0;
-}
-
-.cta-button {
-  background-color: white;
-  color: var(--brand-color);
-  font-size: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-footer {
-  background-color: var(--footer-bg);
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.counselling-block {
-  display: flex;
-  margin: var(--section-margin);
-  justify-content: center;
-}
-
-section {
-  margin: var(--section-margin);
-}
-
-.counselling-block > section {
-  width: 35%;
-  height: 500px;
-  background-color: var(--beige);
-  border-radius: 4px;
-  margin: calc(4 * var(--section-margin));
-}
-
-.counselling-block .card {
-  font: var(--brand-font);
-  font-size: 32px;
-  color: var(--white);
-  background-color: var(--brand-color);
-}
-
-.counselling-block .card.card:hover {
-  background-color: rgb(103, 30, 145);
-  border: 2px 2px white;
-}
-
-.cta-button {
-  background-color: var(--brand-color);
-  color: var(--white);
-}
-
-#faqs {
-  display: flex;
-  justify-content: center;
-}
-
-.faqs-container {
-  text-align: center;
-}
-
-.faqs-container .heading {
-  font-size: 3.5rem;
-  font-family: var(--brand-bold);
-  letter-spacing: 0.07rem;
-  margin-bottom: 1rem;
-}
-.faqs-container .tag {
-  color: rgb(159, 159, 159);
-  opacity: 1;
-  letter-spacing: 0.03rem;
-  font-family: var(--brand-reg);
-  margin-bottom: 3rem;
-}
-.faq-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 3rem;
-}
-
-.question {
-  background: none;
-  border: none;
-  text-align: left;
-  cursor: url("/images/cursor.png"), pointer;
-  padding: 10px 25px;
-  width: 100%;
-  font-family: var(--brand-reg);
-  font-weight: bold;
-  font-size: 1rem;
-  opacity: 0.8;
-}
-.category-quesn {
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-.category-quesn h1 {
-  text-align: start;
-  font-family: var(--brand-bold);
-  font-weight: bolder;
-  margin-bottom: 1rem;
-}
-.category-quesn li {
-  /* padding: 10px 20px; */
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-}
-.category-quesn li :hover {
-  background-color: #f0f0ea;
-}
-hr {
-  height: 1px;
-  background-color: grey;
-  width: 90%;
-  margin-left: 23px;
-  border-radius: 10px;
-  opacity: 0.6;
-  margin-bottom: 1rem;
-}
-.answer {
-  display: none;
-  border: none;
-  text-align: left;
-  width: 650px;
-  padding: 10px;
-  padding: 10px 25px;
-  font-family: var(--brand-reg);
-  font-weight: bold;
-  font-size: 1rem;
-  opacity: 0.8;
-}
-
-#reviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#reviews .heading {
-  font-size: 1.88rem;
-  font-family: var(--brand-bold);
-}
-
-.review {
-  width: 70%;
-  display: flex;
-  position: relative;
-  color: var(--black);
-  background-color: rgb(245, 241, 241);
-  padding: 0.75rem;
-  margin: 1rem;
-  border-radius: 1rem;
-}
-
-.review .icon {
-  width: 10%;
-  position: relative;
-}
-.review .icon i {
-  font-size: 3rem;
-
-  transform-origin: left center;
-  transform: translate(-80px, 10px);
-}
-.review .pfp {
-  display: flex;
-  position: relative;
-  left: -50px;
-  flex-direction: column;
-}
-
-.review .pfp .name {
-  display: flex;
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
-
-.review .pfp .name .rating {
-  color: gold;
-}
-.review .pfp .name .user-name {
-  font-weight: bold;
-  position: relative;
-  left: -40px;
-}
-
-/* footer */
 
 footer {
   display: flex;
@@ -425,4 +221,11 @@ footer {
   color: #125688;
   background: #fefefe;
   border-color: #125688;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
