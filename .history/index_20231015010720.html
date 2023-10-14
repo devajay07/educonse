@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/index.css" />
-  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script src="./index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -14,7 +12,16 @@
     <title>Educonse - Career Counseling</title>
   </head>
   <body>
-    <div id="header"></div>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-item">BLOGS</div>
+        <div class="nav-item">RESOURCES</div>
+        <div class="brand">Educonse</div>
+        <div class="nav-item">SUPPORT</div>
+        <div class="nav-item">ABOUT US</div>
+      </div>
+    </nav>
+
     <main>
       <div class="counselling-block">
         <section id="career-counseling">
@@ -235,16 +242,8 @@
       </div>
     </section>
 
-    <footer id="footer"></footer>
-    
-    <script>
-      $(document).ready(function () {
-        $("#header").load("/pages/header.html");
-      });
-      $(document).ready(function () {
-        $("#footer").load("/pages/footer.html");
-      });
-      
-    </script>
+    <footer></footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

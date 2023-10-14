@@ -31,12 +31,9 @@
   --footer-bg: rgb(20, 21, 28);
 }
 
-main {
+.main {
   display: flex;
   justify-content: center;
   background-color: var(--white);
 }
 
-.right-section{
-  width: 800px;
-}

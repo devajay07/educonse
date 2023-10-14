@@ -34,9 +34,45 @@
 main {
   display: flex;
   justify-content: center;
+  background-color: var(--brand-color);
+}
+.login-panel {
+  margin: calc(4 * var(--section-margin));
+  width: clamp(300px, 60%, 70vw);
+  min-height: 500px;
+  display: flex;
+
+  border-radius: 2rem;
   background-color: var(--white);
 }
 
-.right-section{
-  width: 800px;
+.left-section {
+  width: 30%;
+}
+.right-section {
+  width: 70%;
+  border: solid 2px rgb(180, 173, 173);
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: calc((4 * var(--section-margin)));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(206, 194, 194),
+    -0.1rem -0.1rem 0.1rem 0.1rem rgb(230, 218, 218);
+}
+
+.email {
+  display: flex;
+  width: 100%;
+}
+
+.email > div {
+  padding: 0.5rem;
+}
+
+.email-field {
+  width: 60%;
 }

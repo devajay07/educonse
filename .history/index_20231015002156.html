@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/index.css" />
-  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script src="./index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/header.css">
     <title>Educonse - Career Counseling</title>
   </head>
   <body>
-    <div id="header"></div>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-item">BLOGS</div>
+        <div class="nav-item">RESOURCES</div>
+        <div class="brand">Educonse</div>
+        <div class="nav-item">SUPPORT</div>
+        <div class="nav-item">ABOUT US</div>
+      </div>
+    </nav>
+
     <main>
       <div class="counselling-block">
         <section id="career-counseling">
@@ -188,14 +194,17 @@
                 <i class="fa-solid fa-star"></i>
               </div>
             </div>
-            <div class="desc">Many Teachers Recommned it these days.</div>
+            <div class="desc">
+              Fabulous Product . I would totally recommend it. Many Teachers
+              Recommned it these days.
+            </div>
           </div>
         </div>
         <div class="review">
           <div class="icon"><i class="fa-solid fa-user"></i></div>
           <div class="pfp">
             <div class="name">
-              <div class="user-name">Vinay</div>
+              <div class="user-name">Ajay</div>
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -235,16 +244,32 @@
       </div>
     </section>
 
-    <footer id="footer"></footer>
-    
-    <script>
-      $(document).ready(function () {
-        $("#header").load("/pages/header.html");
-      });
-      $(document).ready(function () {
-        $("#footer").load("/pages/footer.html");
-      });
-      
-    </script>
+    <footer>
+      <div class="footer-1">
+        <div class="customer-service">
+          <div class="">
+            <h1>Customer Service</h1>
+            <p>Do you have any Questions?</p>
+          </div>
+          <div class="mail">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <br />
+            <a
+              href="
+https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=educonse@gmail.com
+"
+            >
+              <span>educonse@gmail.com</span> </a
+            ><span>Mon-Sat | 09:00 - 20:00 IST </span>
+          </div>
+        </div>
+        <div class="legal"></div>
+        <div class="reach-us"></div>
+        <div class="other-services"></div>
+      </div>
+      <div class="footer-2">&copy; 2023 Educonse - All Rights Reserved</div>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

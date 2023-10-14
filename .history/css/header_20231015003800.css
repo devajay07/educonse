@@ -89,17 +89,13 @@ footer {
   margin-bottom: 0.5rem;
 }
 .footer-1 p {
-  font-size: 0.8rem;
-  opacity: 0.6;
+  font-size: 1rem;
   color: #f0e8e8;
   padding: 0.3rem;
-  font-family: var(--brand-reg);
 }
-.footer-1 .heading{
+.footer-1 {
   padding-bottom: 1rem;
-  font-family: var(--brand-bold);
 }
-
 
 .footer-1 span {
   font-size: 0.8rem;
@@ -114,14 +110,6 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.reach-us iframe{
-  border-radius: 8px;
-}
-
-.footer-2{
-  padding-top: 1.2rem;
 }
 
 .text {

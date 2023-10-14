@@ -34,9 +34,10 @@
 main {
   display: flex;
   justify-content: center;
-  background-color: var(--white);
+  background-color: var(--brand-color);
+}
 }
 
-.right-section{
-  width: 800px;
+.email-field {
+  width: 60%;
 }
