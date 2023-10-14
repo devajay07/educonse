@@ -1,5 +1,6 @@
 @import url("/css/global.css");
 
+
 main .login-panel {
   display: flex;
   justify-content: center;
@@ -42,17 +43,13 @@ input[type=email] {
   width: 350px;
   height: 40px;
   border-radius: 4px;
-  margin: 1rem;
-  border-color: rgb(195, 208, 219);
-  margin-right: 0;
-  text-align: center;
+  margin: 0.3rem;
+  border:solid 0.1rem gray ;
+  margin-right: 20px;
+  
 }
 
-input[type=password]:focus,
-input[type=email]:focus {
-  background-color: rgb(102, 159, 209);
-  color:white;
-}
+
 
 input[type=password] {
   font-size: xx-large;
@@ -67,6 +64,7 @@ input[type=password] {
   font-size: 1.5rem;
   border-radius: 8px;
   transform: translateX(-16px);
+  border:0;
 
 }
 
@@ -96,11 +94,13 @@ input[type=password] {
   align-items: center;
 }
 
+
 .forgot a {
   text-decoration: none;
   color: grey;
   float: right;
-  margin: 0.2rem 0 0.8rem;
+  margin: 0.2rem -20px 0.8rem;
+  margin-right:20px;
 }
 
 .other {
@@ -138,7 +138,7 @@ input[type=password] {
 
 .gmail {
   background-color: var(--white);
-  border:solid 2px rgb(173, 171, 171);
+  border:solid 1px rgb(221, 211, 211);
 }
 
 .gmail img {
@@ -173,4 +173,10 @@ input[type=password] {
   width: 700px;
   height: 500px;
   object-fit: contain;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  bottom:0;
 }
