@@ -12,28 +12,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-const carouselContainer = document.querySelector(".carousel-container");
-const carouselSlide = document.querySelectorAll(".carousel-slide");
-const prevButton = document.querySelector(".prev-button");
-const nextButton = document.querySelector(".next-button");
-
-let currentIndex = 0;
-
-nextButton.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % carouselSlide.length;
-  updateCarousel();
-});
-
-prevButton.addEventListener("click", () => {
-  currentIndex =
-    (currentIndex - 1 + carouselSlide.length) % carouselSlide.length;
-  updateCarousel();
-});
-
-function updateCarousel() {
-  const slideWidth = carouselSlide[0].clientWidth;
-  carouselContainer.style.transform = `translateX(-${
-    currentIndex * slideWidth
-  }px)`;
-}
