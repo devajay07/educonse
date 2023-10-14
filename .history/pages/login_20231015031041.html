@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/login.css" />
+</head>
+
+<body>
+  <header id="header"></header>
+  <main>
+    <div class="login-panel">
+      <div class="left-section">
+        <div class="top">
+          <h1 class="heading">Login</h1>
+          <h2 class="sub-heading">Welcome Back! Please Enter your details</h2>
+        </div>
+        <div class="input-form" id="input-form">
+          <div class="email">
+            <label for="email-input">Email</label>
+            <input type="email" name="email-input" id="email-input" />
+          </div>
+          <div class="password">
+            <label for="password-input">Password</label>
+            <input type="password" id="password-input">
+          </div>
+          <div class="forgot">
+            <a href="#">Forgot Password?</a>
+          </div>
+          <input type="button" value="Login" id="submit">
+        </div>
+        <div class="other">
+          <div class="line"></div>
+          <p > other </p>
+        </div>
+        <div class="other-methods">
+          <div class="gmail">
+            <img src="/images/Gmail_icon_(2020).svg.png" alt="gmail logo" width:>
+          </div>
+          <div class="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            
+            <p>Sign in with facebook</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+
+        <img src="/images/login1.png" alt="Login Image" id="login-img">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-2">&copy; 2023 Educonse - All Rights Reserved</div>
+  </footer>
+  <script>
+    $(document).ready(function () {
+      $("#header").load("/pages/header.html");
+    });
+  </script>
+</body>
+
+</html>
