@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/index.css" />
-  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="./index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/header.css" />
     <title>Educonse - Career Counseling</title>
   </head>
   <body>
@@ -173,57 +173,24 @@
 
       <section id="reviews" class="reviews">
         <div class="heading">
-          <h2>What others are saying about us ?</h2>
+          <h1>What Others say about us?</h1>
         </div>
-        <div class="review">
-          <div class="icon"><i class="fa-solid fa-user"></i></div>
-          <div class="pfp">
-            <div class="name">
-              <div class="user-name">Ajay</div>
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="desc">Many Teachers Recommned it these days.</div>
+        <div class="review-container">
+          <div class="left-arrow arrow">
+            <img src="./images/left-arrow.png" alt="" />
           </div>
-        </div>
-        <div class="review">
-          <div class="icon"><i class="fa-solid fa-user"></i></div>
-          <div class="pfp">
-            <div class="name">
-              <div class="user-name">Vinay</div>
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="desc">
-              Fabulous Product . I would totally recommend it.
-            </div>
+          <div class="review">
+            <h4>
+              <i class="fa-solid fa-quote-left"></i> &#160; Educonse has been a
+              game-changer for me. Their career counseling services helped me
+              identify my true passion and set clear goals. I'm now on a path
+              that I'm truly excited about! &#160;
+              <i class="fa-solid fa-quote-right"></i>
+            </h4>
+            <h2>Ajay Yadav, Bhopal</h2>
           </div>
-        </div>
-
-        <div class="review">
-          <div class="icon"><i class="fa-solid fa-user"></i></div>
-          <div class="pfp">
-            <div class="name">
-              <div class="user-name">Arpit</div>
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="desc">Great Quality Content. Really Helped me.</div>
+          <div class="right-arrow arrow">
+            <img src="./images/right-arrow.png" alt="" />
           </div>
         </div>
       </section>
@@ -231,12 +198,12 @@
 
     <section id="cta">
       <div class="container">
-        <button class="cta-button">Get Started</button>
+        <button class="cta-button">Book Your Session Now</button>
       </div>
     </section>
 
     <footer id="footer"></footer>
-    
+
     <script>
       $(document).ready(function () {
         $("#header").load("/pages/header.html");
@@ -244,7 +211,6 @@
       $(document).ready(function () {
         $("#footer").load("/pages/footer.html");
       });
-      
     </script>
   </body>
 </html>
