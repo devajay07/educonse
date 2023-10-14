@@ -31,12 +31,33 @@
   --footer-bg: rgb(20, 21, 28);
 }
 
-main {
+main .login-panel{
   display: flex;
   justify-content: center;
   background-color: var(--white);
+  font-family: var(--brand-reg);
 }
 
-.right-section{
+.left-section{
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  font-family: var(--brand-reg );
+  
+}
+
+.top{
+  
+}
+
+.heading{
+  font-family: var(--brand-bold);
+}
+
+#login-img{
+  width: 700px;
+  height:500px;
+  object-fit: contain;
 }
