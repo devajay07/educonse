@@ -15,12 +15,16 @@
       <div class="left-section">
         <div class="login-container">
           <div class="top">
-            <h1 class="heading">Login</h1>
-            <h2 class="sub-heading">
-              Welcome Back! Please Enter your details.
-            </h2>
+            <h1 class="heading">Signup</h1>
           </div>
           <div class="input-form" id="input-form">
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              id="name-input"
+            />
+            <input type="number" name="age" placeholder="Age" id="age-input" />
             <div class="email">
               <input
                 type="email"
@@ -36,11 +40,13 @@
                 id="password-input"
               />
             </div>
-            <div class="forgot">
-              <a href="#">Forgot Password?</a>
-            </div>
+            <input
+              type="password"
+              placeholder=" Confirm Password"
+              id="password-input"
+            />
             <div class="submit">
-              <button type="submit">Login</button>
+              <button style="margin-top: 1.2rem" type="submit">Signup</button>
             </div>
           </div>
           <div class="other">
@@ -56,22 +62,18 @@
                 height="24px"
               />
               <hr />
-              <p>Login with Google</p>
+              <p>Signup with Google</p>
             </div>
             <div class="facebook">
               <i class="fa-brands fa-facebook-f"></i>
               <hr />
-              <p>Login with facebook</p>
+              <p>Signup with facebook</p>
             </div>
           </div>
           <div class="signup">
             <p>
-              Don't have an account ?
-              <span
-                ><a class="signup-link" href="/pages/signup.html"
-                  >Sign Up</a
-                ></span
-              >
+              Already have an account ?
+              <span><a class="signup-link" href="">Log In</a></span>
             </p>
           </div>
         </div>

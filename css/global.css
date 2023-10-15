@@ -18,16 +18,28 @@
 }
 
 :root {
-  --brand-color: rgb(26, 198, 181);
+  --brand-color: rgb(106, 99, 246);
   --hookers-green: hsla(174, 17%, 46%, 1);
   --white: hsla(0, 0%, 100%, 1);
   --poppy: hsla(356, 74%, 52%, 1);
   --black: hsla(60, 1%, 14%, 1);
   --beige: #f5f5dc;
+  --brand-gradient: linear-gradient(to right, rgb(26, 198, 181), #ffffff);
 
   --brand-bold: "brand-bold", sans-serif;
   --brand-reg: "brand-reg", sans-serif;
   --universal-margin: 1rem 8rem;
   --section-margin: 1rem;
-  --footer-bg: rgb(20, 21, 28);
+  --footer-bg: -webkit-linear-gradient(#161616, #000000);
+}
+
+.footer-img img {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: -4rem;
+  opacity: 0.85;
+  position: relative;
+  z-index: -1;
 }

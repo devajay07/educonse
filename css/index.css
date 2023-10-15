@@ -11,27 +11,93 @@ body {
   color: #333; /* A light version of black */
 }
 
-.card {
-  color: white;
+.counselling {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.counselling .heading {
+  font-family: var(--brand-reg);
+  font-size: 3rem;
+  background: linear-gradient(45deg, #ff9853, #dd2b2b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  margin-bottom: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--brand-reg);
+}
+
+.counseling-card {
+  width: 65%; /* Adjust the width as needed */
+  background-color: white;
+  border-radius: 10px;
   padding: 20px;
+  text-align: center;
+  display: flex;
+  gap: 10rem;
+}
+
+.image {
+  flex: 1.3;
+  text-align: center;
+  /* margin-bottom: 10px;  */
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info h1 {
+  font-size: 2rem;
+}
+
+.info p {
+  font-size: 16px;
+  color: #333;
+}
+
+.cta-button {
+  text-decoration: none;
+  background: var(--black); /* Use your brand color */
+  color: rgb(255, 255, 255);
+  padding: 12px 40px;
   border-radius: 5px;
   text-align: center;
-  font-size: 24px;
+  transition: background 0.5s;
+  border: none;
+
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: var(--brand-color); /* A darker shade for hover effect */
+  cursor: pointer;
 }
 
 section#cta {
   text-align: center;
   padding: 40px 0;
-}
-
-.cta-button {
-  background-color: white;
-  color: var(--brand-color);
-  font-size: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .counselling-block {
@@ -62,12 +128,6 @@ section {
 .counselling-block .card.card:hover {
   background-color: rgb(103, 30, 145);
   border: 2px 2px white;
-}
-
-.cta-button {
-  padding: 12px 30px;
-  background-color: var(--brand-color);
-  color: var(--white);
 }
 
 #faqs {
