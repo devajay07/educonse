@@ -1,6 +1,10 @@
 @import url("/css/global.css");
 
-main .login-panel {
+body {
+  height: 90vh;
+}
+
+.login-panel {
   display: flex;
   justify-content: space-between;
   background-color: var(--white);
