@@ -18,28 +18,35 @@ body {
     background-repeat: no-repeat;
 
 }
+
 main {
     padding: 0;
 }
 
-main  .blog-heading{
+.blog-heading .img {
+    
+    position: static;
+
+}
+
+.blog-heading .heading {
+    font-family: "Anton", var(--brand-reg), Arial;
+    color: var(--black);
+
+}
+
+.blog-heading .text {
+    position: static;
     display: flex;
+    flex-direction: column;
+
+}
+
+main .blog-heading {
+    display: flex;
+    align-items:flex-end; 
     justify-content: space-evenly;
-    position:relative;
-}
-
-
-
-.blog-heading .img img{
-    width:400px;
-    height:400px;
-
-}
-.blog-heading  .heading{
-    font-family: "Anton",var(--brand-reg),Arial;
-    font-size: 48px;
-    color:var(--black);
-
+    margin-bottom: 4rem;
 }
 
 .blog-container {
@@ -144,4 +151,9 @@ main  .blog-heading{
 .life-tag {
     background-color: var(--black);
     color: var(--white);
+}
+
+main .blog-heading .red{
+    color:var(--poppy);
+
 }
