@@ -1,13 +1,13 @@
 @import url("/css/global.css");
 
-
-
 .login-panel {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--white);
   font-family: var(--brand-reg);
   margin-top: -6rem;
+  height: 90vh;
 }
 
 .left-section {
@@ -41,7 +41,7 @@
   font-family: var(--brand-reg);
 }
 
-.input>div {
+.input > div {
   font-size: 1.3rem;
 }
 
@@ -154,7 +154,7 @@ input {
   justify-content: space-between;
 }
 
-.other-methods>div {
+.other-methods > div {
   display: flex;
   justify-content: space-around;
   align-items: center;
