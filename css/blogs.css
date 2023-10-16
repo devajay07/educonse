@@ -1,0 +1,147 @@
+@import url("./global.css");
+@import url("./header.css");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: white;
+    color: #333;
+    /*A light version of black */
+    /* background-image: url("/images/pexels-joão-jesus-921294.jpg"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+main {
+    padding: 0;
+}
+
+main  .blog-heading{
+    display: flex;
+    justify-content: space-evenly;
+    position:relative;
+}
+
+
+
+.blog-heading .img img{
+    width:400px;
+    height:400px;
+
+}
+.blog-heading  .heading{
+    font-family: "Anton",var(--brand-reg),Arial;
+    font-size: 48px;
+    color:var(--black);
+
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    background-color: var(--brand-color);
+    position: relative;
+    bottom: 0;
+
+}
+
+
+.blog {
+    width: 300px;
+    background-color: var(--white);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.blog-img img {
+    width: 280px;
+    margin: 10px;
+    height: 280px;
+    border-radius: 8px;
+    opacity: 0.85;
+
+}
+
+.blog-text {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+    border-radius: 4px;
+    background-color: rgb(236, 230, 230);
+    padding: 10px;
+    text-align: center;
+}
+
+.blog-text .heading {
+    font-family: var(--brand-bold);
+
+}
+
+.blog-text .desc {
+    margin: 0.5rem 0;
+
+
+}
+
+.read-more {
+    height: 40px;
+    color: var(--white);
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    bottom: 0;
+}
+
+.read-more a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.tags {
+    display: flex;
+}
+
+.tags>div {
+    margin: 0.2rem 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.tags>div:hover {
+    cursor: pointer;
+}
+
+.education-tag {
+    background-color: var(--poppy);
+    color: var(--white);
+}
+
+.career-tag {
+    background-color: var(--hookers-green);
+    color: var(--white);
+}
+
+.college-tag {
+    background-color: var(--beige);
+}
+
+.life-tag {
+    background-color: var(--black);
+    color: var(--white);
+}
