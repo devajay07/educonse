@@ -1,21 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resources</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-</head>
+    <link rel="stylesheet" href="/css/resources.css" />
+  </head>
 
-<body>
+  <body>
     <header id="header"></header>
+    <main>
+      <div class="nav-s">
+        <div id="science">Science</div>
+        <div id="commerce">Commerce</div>
+        <div class="search">
+          <input
+            type="text"
+            name="search-box"
+            id="search-box"
+            placeholder="Search"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+        <div id="exams">Exams</div>
+      </div>
+      <div class="content-area">
+        <div class="category cat-science">
+          <div class="book">
+            <img src="/images//books/chem.webp" alt="chemistry" srcset="" />
+            <h1>NCERT Chemistry Class 11</h1>
+          </div>
 
+          <div class="book">
+            <img src="/images/books/rd_sharma.jpg" alt="" srcset="" />
+            <h1>RD Sharma class 12 vol 1</h1>
+          </div>
+          <div class="book">
+            <img src="/images/books/hc_verma.jpg" alt="" srcset="" />
+            <h1>HC Verma Vol 1 Class 11</h1>
+          </div>
+          <div class="book">
+            <img src="/images/books/irodov.jpg" alt="" srcset="" />
+            <h1>Irodov (Arihant)</h1>
+          </div>
+        </div>
+        <div class="category cat-commerce">
+          <div class="book">
+            <img src="/images/books/c_abhijit.webp" alt="" />
+            <h1>Poor Economics by Abhijit Banerjee and Esther Duflo</h1>
+          </div>
+          <div class="book">
+            <img src="/images/books/c_accountancy.webp" alt="" />
+            <h1>Commerce and Accountancy</h1>
+          </div>
+          <div class="book">
+            <img src="/images/books/c_nta_ugc.webp" alt="" />
+            <h1>UGC NET | Pearson Media</h1>
+          </div>
+        </div>
+
+        <div class="category cat-exams">
+          <div class="book">
+            <img src="/images/books/e_ancient_india.webp" alt="" />
+            <h1>Ancient India</h1>
+          </div>
+          <div class="book">
+            <img src="/images/books/e_bhartiya_arthvyavastha.webp" alt="" />
+            <h1>Bhartiya Arthvyavastha</h1>
+          </div>
+          <div class="book">
+            <img src="/images/books/e_ncert_note.jpg" alt="" />
+            <h1>NCERT Notes</h1>
+          </div>
+          <div class="book">
+            <img src="/images/books/e_polity.webp" alt="" />
+            <h1>Polity by Laxmikant</h1>
+          </div>
+        </div>
+      </div>
+    </main>
     <script>
-        $(document).ready(() => {
-            $("#header").load("/pages/header.html");
-        })
-    </script>
-</body>
+      $(document).ready(() => {
+        $("#header").load("/pages/header.html");
 
+        $("#science").click(function () {
+          $(".cat-science .book").css("display", "flex");
+          $(".cat-commerce .book").css("display", "none");
+          $(".cat-exams .book").css("display", "none");
+        });
+        $("#commerce").click(function () {
+          $(".cat-science .book").css("display", "none");
+          $(".cat-commerce .book").css("display", "flex");
+          $(".cat-exams .book").css("display", "none");
+        });
+        $("#exams").click(function () {
+          $(".cat-science .book").css("display", "none");
+          $(".cat-exams .book").css("display", "flex");
+          $(".cat-commerce .book").css("display", "none");
+        });
+      });
+    </script>
+  </body>
 </html>
