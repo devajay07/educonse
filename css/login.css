@@ -1,15 +1,12 @@
 @import url("/css/global.css");
 
-body {
-  height: 90vh;
-}
+
 
 .login-panel {
   display: flex;
   justify-content: space-between;
   background-color: var(--white);
   font-family: var(--brand-reg);
-  height: 100%;
   margin-top: -6rem;
 }
 
@@ -44,7 +41,7 @@ body {
   font-family: var(--brand-reg);
 }
 
-.input > div {
+.input>div {
   font-size: 1.3rem;
 }
 
@@ -78,6 +75,7 @@ input {
   margin-bottom: 1rem;
   transition: background 0.4s;
 }
+
 .submit button:hover {
   width: 100%;
   background-color: var(--brand-color);
@@ -156,7 +154,7 @@ input {
   justify-content: space-between;
 }
 
-.other-methods > div {
+.other-methods>div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -174,21 +172,15 @@ input {
   object-fit: contain;
 }
 
-.gmail p {
+.gmail p,
+.facebook p,
+.facebook i {
   color: black;
 }
 
 .facebook {
   background-color: #ffffff;
   border: 1px solid rgb(180, 180, 180);
-}
-
-.facebook p {
-  color: rgb(0, 0, 0);
-}
-
-.facebook i {
-  color: rgb(0, 0, 0);
 }
 
 .other-methods hr {
@@ -199,13 +191,15 @@ input {
 .signup {
   display: flex;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .signup p {
   color: var(--black);
   opacity: 0.7;
 }
+
 .signup-link {
   text-decoration: none;
   opacity: 1;
