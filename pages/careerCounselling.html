@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/collegeCounselling.css" />
+    <title>Career Counseling</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="heading">
+          Explore Your Career Options with Expert Guidance.
+        </h2>
+      </div>
+    </section>
+
+    <section class="domains" id="domains">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search for your career option"
+          name="search"
+          id=""
+        />
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </div>
+      <div class="stream-cards">
+        <div class="stream-card">
+          <img src="/images/police.jpg" alt="Civil Services" />
+          <h3>Civil Services</h3>
+          <p>Pursue a career in government services.</p>
+          <a href="schedule.html?career=civil-services" class="cta-button"
+            >Schedule a Session</a
+          >
+        </div>
+
+        <div class="stream-card">
+          <img src="/images/coding.jpg" alt="Software Engineer" />
+          <h3>Software Engineer</h3>
+          <p>Explore a career in software development.</p>
+          <a href="schedule.html?career=software-engineer" class="cta-button"
+            >Schedule a Session</a
+          >
+        </div>
+
+        <div class="stream-card">
+          <img src="/images/doctors.svg" alt="Medical Professional" />
+          <h3>Medical Professional</h3>
+          <p>Embark on a journey in healthcare.</p>
+          <a href="schedule.html?career=medical-professional" class="cta-button"
+            >Schedule a Session</a
+          >
+        </div>
+
+        <div class="stream-card">
+          <img src="/images/buisness.svg" alt="Business Manager" />
+          <h3>Business Manager</h3>
+          <p>Lead in the world of business and management.</p>
+          <a href="schedule.html?career=business-manager" class="cta-button"
+            >Schedule a Session</a
+          >
+        </div>
+        <!-- Additional Career Cards -->
+        <div class="stream-card">
+          <img src="/images/teacher.svg" alt="Teacher" />
+          <h3>Teacher</h3>
+          <p>Inspire and educate future generations as a teacher.</p>
+          <a href="schedule.html?career=teacher" class="cta-button"
+            >Schedule a Session</a
+          >
+        </div>
+
+        <div class="stream-card">
+          <img src="/images/commerce.svg" alt="Marketing Professional" />
+          <h3>Marketing Professional</h3>
+          <p>Shape brand strategies as a marketing expert.</p>
+          <a href="schedule.html?career=marketing" class="cta-button"
+            >Schedule a Session</a
+          >
+        </div>
+
+        <div class="stream-card">
+          <img src="/images/medicine.svg" alt="Doctor" />
+          <h3>Doctor</h3>
+          <p>Save lives and care for patients as a medical doctor.</p>
+          <a href="schedule.html?career=doctor" class="cta-button"
+            >Schedule a Session</a
+          >
+        </div>
+
+        <div class="stream-card">
+          <img src="/images/designer.svg" alt="Graphic Designer" />
+          <h3>Graphic Designer</h3>
+          <p>Create visual masterpieces as a graphic designer.</p>
+          <a href="schedule.html?career=graphic-designer" class="cta-button"
+            >Schedule a Session</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $("#header").load("/pages/header.html");
+      });
+    </script>
+  </body>
+</html>
