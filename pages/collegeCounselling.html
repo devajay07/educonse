@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/collegeCounselling.css" />
+    <title>College Counseling</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Personalized College Recommendations</li>
+          <li>Expert Mentors and Teachers</li>
+          <li>Assistance with Admission Process</li>
+          <li>UG and PG College Counseling</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Ready to start your college journey? Contact us for personalized
+          counseling and guidance.
+        </p>
+        <a href="#questionnaire" class="cta-button">Answer Questions</a>
+      </div>
+    </section>
+
+    <section id="questionnaire" class="questionnaire">
+      <div class="container">
+        <h2>Get Personalized College Recommendations</h2>
+        <p>
+          Answer a few questions, and we'll help you find the right colleges for
+          your goals.
+        </p>
+        <a href="questionnaire.html" class="cta-button">Start Questionnaire</a>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $("#header").load("/pages/header.html");
+      });
+    </script>
+  </body>
+</html>
