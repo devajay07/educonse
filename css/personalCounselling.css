@@ -1,0 +1,145 @@
+@import url("/css/global.css");
+
+.styled-div {
+    background-color: rgb(106, 99, 246);
+    text-align: center;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    margin:2rem 0 8rem 0;
+    border-radius:4px;
+}
+
+.content {
+    padding: 3rem;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.title {
+    font-size: 48px;
+    color: rgb(106, 99, 246);
+}
+
+.description {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content ul {
+    list-style:none;
+}
+
+.content .description{
+    text-wrap:balance;
+    margin:1rem 0;
+}
+
+.tests {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 6rem;
+
+}
+
+.animated-tagline {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .active {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0;
+  }
+
+
+.test {
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    color:var(--brand-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: scale 0.3s;
+
+}
+.test:hover{
+    scale: 1.1;
+}
+.test a {
+    text-decoration: none;
+
+}
+
+.test img {
+    width: 300px;
+    margin: 2rem;
+    border-radius: 4px;
+    padding: 1rem;
+    border: 10px solid transparent;
+    animation: ease 1s grow;
+
+}
+
+.test1 img {
+    background-color: var(--brand-color);
+    height: 350px;
+}
+.test1{
+    transform: translateY(-8rem) ;
+
+
+}
+
+
+
+.test2 img {
+    border-image: url(/images/border.png) 20% round;
+
+}
+
+.test1{
+    transform:translateY(8rem);
+}
+
+.h-1,
+.h-2,
+{
+    --off: 50px;
+
+    animation: ease 1s x;
+    color: var(--brand-gradient);
+
+}
+
+@keyframes grow {
+    from {
+        scale: 0.8;
+    }
+
+    to {
+        scale:1;
+    }
+}
+
+@keyframes x {
+    from {
+        display: none;
+        transform: translateX(var(--off));
+    }
+
+    to {
+        display: block;
+        transform: translateX(0);
+    }
+}
+
