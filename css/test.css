@@ -1,0 +1,97 @@
+@import url(/css/global.css);
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    color:#494747;
+
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap;
+    position:relative;
+
+}
+
+.sub{
+    width:80%;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 48px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color:var(--brand-color);
+    margin: 1rem 0;
+
+}
+
+.container h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5rem 0;
+}
+
+.container p {
+    font-size: 16px;
+    
+    color: #555;
+}
+
+.subdivision {
+   
+    background-color:pink;
+    border-radius:4px;
+    padding:1rem;
+    margin:1rem;
+    width:40%;
+    text-align: center;
+    transition: scale 0.4s;
+    scale: 0.9;
+
+}
+.subdivision:hover{
+    scale: 1;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start ;
+}
+
+.left-section {
+    height:200vh;
+    display: flex;
+    justify-content: center;
+
+    margin-top: -4rem;
+    padding:2rem;
+    background-image: linear-gradient(-145deg,blueviolet,purple,violet,rgb(153, 20, 47));
+}
+
+
+
+.right-section button {
+    font-size: 2rem;
+    padding: 1rem;
+
+    background-color:blue;
+    color:white;
+    border-radius:4px;
+
+    position: fixed;
+    width: max-content;
+    bottom:2rem;
+    right:2rem;
+
+}
