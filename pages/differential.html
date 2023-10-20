@@ -113,45 +113,50 @@
       </button>
     </div>
   </main>
-  <div class="section-2">
-    <h1>Answer these Questions honestly</h1>
-    <div id="quiz-container">
-      <div id="question-container">
-        <h2 id="question"></h2>
-      </div>
-      <form id="quiz-form">
-        <div class="labels">
+  
+      <div class="section-2">
+        <h1>Answer these Questions honestly</h1>
+        <div id="quiz-container">
+          <div id="question-container">
+            <h2 id="question"></h2>
+          </div>
+          <form id="quiz-form">
+            <div class="labels">
+              <div class="inputs">
+              <div class="label">Totally Disagree</div>
+              <label for="choice1"></label>
+              <div class="input"><input type="radio" name="choice" id="choice1" value="1"></div>
+              </div>
 
-          <div class="label">Totally Disagree</div>
-          <div class="label">Somewhat Disagree</div>
-          <div class="label" style="transform: translateX(-1rem);">Neutral</div>
-          <div class="label">Somewhat Agree</div>
-          <div class="label">Totally Agree</div>
+              <div class="inputs">
+              <div class="label">Slightly Disagree</div>
+              <label for="choice2"></label>
+              <div class="input"><input type="radio" name="choice" id="choice2" value="2"></div>
+              </div>
+              <div class="inputs">
+              <div class="label">Neutral</div>
+              <label for="choice3"></label>
+              <div class="input"><input type="radio" name="choice" id="choice3" value="3"></div>
+              </div>
+              <div class="inputs">
+              <div class="label">Slightly Agree</div>
+              <label for="choice4"></label>
+              <div class="input"><input type="radio" name="choice" id="choice4" value="4"></div>
+              </div>
+              <div class="inputs">
+              <div class="label">Totally Agree</div>
+              <label for="choice5"></label>
+              <div class="input"><input type="radio" name="choice" id="choice5" value="5"></div>
+              </div>
+
+            </div>
+            <div class="navigation">
+    
+              <button type="button" id="previous-button">Previous</button>
+              <button type="button" id="next-button">Next</button>
+            </div>
+          </form>
         </div>
-        <div class="inputs">
-
-          <label for="choice1"></label>
-          <label for="choice2"></label>
-          <label for="choice3"></label>
-          <label for="choice4"></label>
-          <label for="choice5"></label>
-          <div class="input"><input type="radio" name="choice" id="choice1" value="1"></div>
-          <div class="input"><input type="radio" name="choice" id="choice2" value="2"></div>
-          <div class="input"><input type="radio" name="choice" id="choice3" value="3"></div>
-          <div class="input"><input type="radio" name="choice" id="choice4" value="4"></div>
-          <div class="input"><input type="radio" name="choice" id="choice5" value="5"></div>
-
-        </div>
-        <div class="navigation">
-
-          <button type="button" id="previous-button">Previous</button>
-          <button type="button" id="next-button">Next</button>
-        </div>
-      </form>
-    </div>
-
-  </div>
-
   <script>
     $(document).ready(() => {
       $("#header").load("/pages/header.html");

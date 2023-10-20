@@ -30,8 +30,19 @@
   font-weight: 600;
   border-radius: 4px;
   border: none;
-  background-color: rgb(244, 247, 251);
+
+  background-color: var(--brand-color);
+  color: rgb(236, 216, 216);
+  box-shadow: 0 0 1rem 0.5rem rgb(204, 202, 202);
   padding: 1rem;
+  scale: 0.9;
+  transition: all 0.3s;
+}
+
+.description:hover {
+  scale: 1;
+  background-color: rgb(92, 85, 237);
+  color: white;
 }
 
 .content ul {
