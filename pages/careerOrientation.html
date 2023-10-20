@@ -71,11 +71,108 @@
         </button>
       </div>
     </main>
+      <div class="section-2">
+        <h1>Answer these Questions honestly</h1>
+        <div id="quiz-container">
+          <div id="question-container">
+            <h2 id="question"></h2>
+          </div>
+          <form id="quiz-form">
+            <div class="labels">
+    
+              <div class="label">Totally Disagree</div>
+              <div class="label">Somewhat Disagree</div>
+              <div class="label" style="transform: translateX(-1rem);">Neutral</div>
+              <div class="label">Somewhat Agree</div>
+              <div class="label">Totally Agree</div>
+            </div>
+            <div class="inputs">
+    
+              <label for="choice1"></label>
+              <label for="choice2"></label>
+              <label for="choice3"></label>
+              <label for="choice4"></label>
+              <label for="choice5"></label>
+              <div class="input"><input type="radio" name="choice" id="choice1" value="1"></div>
+              <div class="input"><input type="radio" name="choice" id="choice2" value="2"></div>
+              <div class="input"><input type="radio" name="choice" id="choice3" value="3"></div>
+              <div class="input"><input type="radio" name="choice" id="choice4" value="4"></div>
+              <div class="input"><input type="radio" name="choice" id="choice5" value="5"></div>
+    
+            </div>
+            <div class="navigation">
+    
+              <button type="button" id="previous-button">Previous</button>
+              <button type="button" id="next-button">Next</button>
+            </div>
+          </form>
+        </div>
+    
+    
 
     <script>
       $(document).ready(() => {
         $("#header").load("/pages/header.html");
-      });
+        const quizData = [
+          "Question 1: Do you Feel Uncomfortable in crowd?",
+          "Question 2: You stay in your comfort zone? ",
+          "Question 3: Would you prefer to help others before yourself?"
+        ];
+  
+        const quizContainer = document.getElementById("quiz-container");
+        const questionContainer = document.getElementById("question-container");
+        const questionElement = document.getElementById("question");
+        const choiceElements = [1, 2, 3, 4, 5].map(num => document.getElementById(`choice${num}`));
+        const nextButton = document.getElementById("next-button");
+        const previousButton = document.getElementById("previous-button");
+  
+        let currentQuestionIndex = 0;
+        const userResponses = new Array(quizData.length).fill(null);
+  
+        function showQuestion(questionIndex) {
+          questionElement.innerText = quizData[questionIndex];
+          for (let i = 0; i < 5; i++) {
+            choiceElements[i].checked = userResponses[questionIndex] === i + 1;
+          }
+        }
+  
+        function saveResponse() {
+          const selectedChoice = document.querySelector('input[name="choice"]:checked');
+          if (selectedChoice) {
+            userResponses[currentQuestionIndex] = parseInt(selectedChoice.value);
+          }
+        }
+  
+        function goNext() {
+          saveResponse();
+          currentQuestionIndex++;
+          if (currentQuestionIndex < quizData.length) {
+            showQuestion(currentQuestionIndex);
+          } else {
+            displayResult();
+          }
+        }
+  
+        function goPrevious() {
+          if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            showQuestion(currentQuestionIndex);
+          }
+        }
+  
+        function displayResult() {
+          let totalScore = userResponses.reduce((acc, response) => acc + response, 0);
+          quizContainer.innerHTML = `<h2><i class="fa fa-lock" style="margin:0 0.5rem;"></i>Purchase our course to get a detailed analysis</h2>`;
+        }
+  
+        showQuestion(currentQuestionIndex);
+  
+        nextButton.addEventListener("click", goNext);
+        previousButton.addEventListener("click", goPrevious);
+  
+      })
+  
+  
     </script>
   </body>
 </html>

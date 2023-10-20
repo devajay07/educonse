@@ -43,7 +43,24 @@ nav a:hover {
   font-size: 1rem;
   border-radius: 4px;
 }
+
+footer {
+  background: var(--footer-bg);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:space-between;
+}
+
+.footer-img{
+z-index: 0;    
+
+}
 .footer-1 {
+  position: static;
   display: flex;
   justify-content: space-evenly;
 }
@@ -194,9 +211,4 @@ nav a:hover {
   border-color: #125688;
 }
 
-footer {
-  background: var(--footer-bg);
-  color: white;
-  text-align: center;
-  padding: 5px 0;
-}
+

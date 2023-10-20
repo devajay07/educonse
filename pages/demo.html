@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <style>
+        #quiz-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #question {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        #quiz-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #0074d9;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        input[type="radio"]:checked + label::before {
+            background-color: #0074d9;
+        }
+
+        #previous-button,
+        #next-button {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #previous-button:hover,
+        #next-button:hover {
+            background-color: #0056a4;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question-container">
+            <h2 id="question"></h2>
+        </div>
+        <form id="quiz-form">
+            <label for="choice1">Totally Disagree</label>
+            <label for="choice2">Somewhat Disagree</label>
+            <label for="choice3">Neutral</label>
+            <label for="choice4">Somewhat Agree</label>
+            <label for="choice5">Totally Agree</label>
+            <input type="radio" name="choice" id="choice1" value="1">
+            <input type="radio" name="choice" id="choice2" value="2">
+            <input type="radio" name="choice" id="choice3" value="3">
+            <input type="radio" name="choice" id="choice4" value="4">
+            <input type="radio" name="choice" id="choice5" value="5">
+            <button type="button" id="previous-button">Previous</button>
+            <button type="button" id="next-button">Next</button>
+        </form>
+    </div>
+
+    <script>
+        const quizData = [
+            "Question 1: This is a sample statement 1.",
+            "Question 2: This is a sample statement 2.",
+            "Question 3: This is a sample statement 3."
+        ];
+
+        const quizContainer = document.getElementById("quiz-container");
+        const questionContainer = document.getElementById("question-container");
+        const questionElement = document.getElementById("question");
+        const choiceElements = [1, 2, 3, 4, 5].map(num => document.getElementById(`choice${num}`));
+        const nextButton = document.getElementById("next-button");
+        const previousButton = document.getElementById("previous-button");
+
+        let currentQuestionIndex = 0;
+        const userResponses = new Array(quizData.length).fill(null);
+
+        function showQuestion(questionIndex) {
+            questionElement.innerText = quizData[questionIndex];
+            for (let i = 0; i < 5; i++) {
+                choiceElements[i].checked = userResponses[questionIndex] === i + 1;
+            }
+        }
+
+        function saveResponse() {
+            const selectedChoice = document.querySelector('input[name="choice"]:checked');
+            if (selectedChoice) {
+                userResponses[currentQuestionIndex] = parseInt(selectedChoice.value);
+            }
+        }
+
+        function goNext() {
+            saveResponse();
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizData.length) {
+                showQuestion(currentQuestionIndex);
+            } else {
+                displayResult();
+            }
+        }
+
+        function goPrevious() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                showQuestion(currentQuestionIndex);
+            }
+        }
+
+        function displayResult() {
+            let totalScore = userResponses.reduce((acc, response) => acc + response, 0);
+            quizContainer.innerHTML = `<h2>Your Total Score: ${totalScore}</h2>`;
+        }
+
+        showQuestion(currentQuestionIndex);
+
+        nextButton.addEventListener("click", goNext);
+        previousButton.addEventListener("click", goPrevious);
+    </script>
+</body>
+</html>
