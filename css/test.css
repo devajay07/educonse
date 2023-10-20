@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: center ;
     flex-wrap: wrap;
-    position:relative;
+position:relative;
 
 }
 
@@ -70,7 +70,6 @@ main {
 }
 
 .left-section {
-    height:200vh;
     display: flex;
     justify-content: center;
 
