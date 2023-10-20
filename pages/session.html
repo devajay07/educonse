@@ -3,63 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/session.css" />
     <title>Schedule a Session - Engineering</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/session.css" />
   </head>
   <body>
-    <header>
-      <h1>Engineering</h1>
-    </header>
-
+    <header id="header"></header>
     <section class="info">
       <div class="container">
-        <h2>Basic Information</h2>
-        <p>
-          Engineering is the application of scientific principles to design and
-          build systems, structures, devices, and processes. It is a diverse
-          field that offers various specializations and career opportunities.
-        </p>
-      </div>
-    </section>
-
-    <section class="details">
-      <div class="container">
-        <h2>Details</h2>
-        <ul>
-          <li><strong>Eligibility:</strong> Varied based on specialization.</li>
-          <li><strong>Exams:</strong> JEE Main, GATE, and more.</li>
-          <li><strong>Fees:</strong> Varies by college and program.</li>
-          <li>
-            <strong>Average Package:</strong> Approximately $70,000 per annum.
-          </li>
-          <li><strong>Popular Alumni:</strong> [List of famous alumni].</li>
-        </ul>
+        <img src="/images/enginerring2.svg" alt="" srcset="" />
+        <div class="details">
+          <p>
+            Engineering is the application of scientific principles to design
+            and build systems, structures, devices, and processes. It is a
+            diverse field that offers various specializations and career
+            opportunities.
+          </p>
+          <h2>Details</h2>
+          <ul>
+            <li>
+              <strong>Eligibility:</strong> Varied based on specialization.
+            </li>
+            <li><strong>Exams:</strong> JEE Main, GATE, and more.</li>
+            <li><strong>Fees:</strong> Varies by college and program.</li>
+            <li>
+              <strong>Average Package:</strong> Approximately $70,000 per annum.
+            </li>
+            <li><strong>Popular Alumni:</strong> [List of famous alumni].</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="book-session">
       <div class="container">
-        <h2>Book a Session with Our Mentor</h2>
+        <h2 class="heading">Book a Session with Our Mentor</h2>
         <button id="book-session-button">Book Session</button>
       </div>
     </section>
-
-    <section class="meeting-info">
-      <div class="container">
-        <h2>Meeting Information</h2>
-        <p>
-          You have successfully booked a session with our mentor specialized in
-          engineering. Your meeting details are as follows:
-        </p>
-        <ul>
-          <li><strong>Mentor Name:</strong> [Mentor's Name]</li>
-          <li>
-            <strong>Mentor Information:</strong> [Mentor's Credentials and Bio]
-          </li>
-          <li><strong>Date and Time:</strong> [Scheduled Date and Time]</li>
-          <li><strong>Meeting Link:</strong> [Meeting Link or Location]</li>
-        </ul>
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-content">
+        <h2>Confirming Meeting</h2>
+        <p>Please wait while we confirm your meeting...</p>
       </div>
-    </section>
+    </div>
+    <div id="meeting" class="meeting">
+      <section class="meeting-info">
+        <div class="container">
+          <h2>Meeting Information</h2>
+          <p>
+            You have successfully booked a session with our mentor specialized
+            in engineering. Your meeting details are as follows:
+          </p>
+          <ul>
+            <li><strong>Mentor Name:</strong> [Mentor's Name]</li>
+            <li>
+              <strong>Mentor Information:</strong> [Mentor's Credentials and
+              Bio]
+            </li>
+            <li><strong>Date and Time:</strong> [Scheduled Date and Time]</li>
+            <li><strong>Meeting Link:</strong> [Meeting Link or Location]</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="/session.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header").load("/pages/header.html");
+      });
+    </script>
   </body>
 </html>
