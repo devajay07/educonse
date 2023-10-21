@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Hide the loading screen
       loadingScreen.style.display = "none";
       meeting.style.display = "flex";
+      bookSessionButton.textContent = "Session Booked";
+      bookSessionButton.disabled = true;
+      bookSessionButton.style.backgroundColor = "grey";
+      bookSessionButton.style.cursor = "not-allowed";
       const scrollY = window.scrollY;
       const targetY = scrollY + 400;
       scrollToY(targetY, 1000); // Adjust the duration (1000ms) as needed
