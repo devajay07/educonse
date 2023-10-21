@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
       loadingScreen.style.display = "none";
       meeting.style.display = "flex";
       const scrollY = window.scrollY;
-      const targetY = scrollY + 300;
+      const targetY = scrollY + 400;
       scrollToY(targetY, 1000); // Adjust the duration (1000ms) as needed
-    }, 3000); // Replace 3000 with the actual confirmation process duration
+    }, 3500); // Replace 3000 with the actual confirmation process duration
   });
 
   function scrollToY(targetY, duration) {
