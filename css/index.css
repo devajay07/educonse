@@ -357,4 +357,14 @@ hr {
   font-weight: bolder;
 }
 
+.whatsapp-icon {
+  position: fixed;
+  bottom: 30px; /* Adjust the distance from the bottom as needed */
+  right: 50px; /* Adjust the distance from the right as needed */
+  z-index: 9999;
+}
+.whatsapp-icon img {
+  width: 60px;
+}
+
 /* footer */
