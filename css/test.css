@@ -143,9 +143,9 @@ main {
     #ffff00,
     #ff0000
   );
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  background-size: 50%;
+  width: calc(90% + 2px);
+  height: calc(90% + 2px);
   z-index: -1;
   animation: steam 40s linear infinite;
 }
@@ -156,7 +156,7 @@ main {
   }
 
   50% {
-    background-position: 400% 0;
+    background-position: 500% 0;
   }
 
   100% {
