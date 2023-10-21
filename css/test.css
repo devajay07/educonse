@@ -1,238 +1,236 @@
 @import url(/css/global.css);
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 3rem;
-  border-radius: 8px;
-  margin-top: 20px;
-  color: #494747;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #494747;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .sub {
-  width: 80%;
-  text-align: center;
+    width: 80%;
+    text-align: center;
 }
 
 .container h1 {
-  font-size: 48px;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  color: var(--brand-color);
-  margin: 1rem 0;
+    font-size: 48px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: var(--brand-color);
+    margin: 1rem 0;
 }
 
 .container h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin: 0.5rem 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: 0.5rem 0;
 }
 
 .container p {
-  font-size: 16px;
+    font-size: 16px;
 
-  color: #555;
+    color: #555;
 }
 
 .subdivision {
-  background: radial-gradient(rgb(244, 207, 213), rgb(244, 222, 244));
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem;
-  width: 40%;
-  text-align: center;
-  transition: scale 0.4s;
-  scale: 0.9;
-  border: 5px solid transparent;
-  box-shadow: 0 0 10px 10px pink;
+    background: radial-gradient(rgb(244, 207, 213), rgb(244, 222, 244));
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 40%;
+    text-align: center;
+    transition: scale 0.4s;
+    scale: 0.9;
+    border: 5px solid transparent;
+    box-shadow: 0 0 10px 10px pink;
 }
 
 .subdivision:hover {
-  scale: 1;
+    scale: 1;
 }
 
 main {
-  display: flex;
-  justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .left-section {
-  display: flex;
-  justify-content: center;
-  margin-top: -4rem;
-  padding: 2rem;
-  background-image: linear-gradient(
-    -145deg,
-    blueviolet,
-    purple,
-    violet,
-    rgb(153, 20, 47)
-  );
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+    padding: 2rem;
+    background-image: linear-gradient(-145deg,
+            blueviolet,
+            purple,
+            violet,
+            rgb(153, 20, 47));
 }
 
 .right-section button {
-  font-size: 2rem;
-  padding: 1rem;
-  background-color: blue;
-  color: white;
-  border-radius: 4px;
-  transition: scale 0.4s;
-  position: fixed;
-  width: max-content;
-  bottom: 2rem;
-  right: 2rem;
-  scale: 0.9;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    transition: scale 0.4s;
+    position: fixed;
+    width: max-content;
+    bottom: 2rem;
+    right: 2rem;
+    scale: 0.9;
 }
 
 .right-section button:hover {
-  scale: 1;
+    scale: 1;
 }
 
 .section-2 {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #quiz-container {
-  width: clamp(400px, 100%, 600px);
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #393a3b;
-  border-radius: 6px;
-  box-shadow: 0 0 50px 5px rgb(15, 15, 15);
-  color: white;
-  border: 2px solid transparent;
+    width: clamp(400px, 100%, 600px);
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #393a3b;
+    border-radius: 6px;
+    box-shadow: 0 0 50px 5px rgb(15, 15, 15);
+    color: white;
+    border: 2px solid transparent;
 
-  border-image: url(/images/hollowed-boxes.svg) 40%;
-  position: relative;
-  text-align: center;
+    border-image: url(/images/hollowed-boxes.svg) 40%;
+    position: relative;
+    text-align: center;
 }
 
 #quiz-container:before,
 #quiz-container:after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background: linear-gradient(
-    45deg,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000
-  );
-  background-size: 50%;
-  width: calc(90% + 2px);
-  height: calc(90% + 2px);
-  z-index: -1;
-  animation: steam 40s linear infinite;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(45deg,
+            #fb0094,
+            #0000ff,
+            #00ff00,
+            #ffff00,
+            #ff0000,
+            #fb0094,
+            #0000ff,
+            #00ff00,
+            #ffff00,
+            #ff0000);
+    background-size: 50%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    animation: steam 40s linear infinite;
 }
 
 @keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
+    0% {
+        background-position: 0 0;
+    }
 
-  50% {
-    background-position: 100% 0;
-  }
+    50% {
+        background-position: 1000% 0;
+    }
 
-  100% {
-    background-position: 0 0;
-  }
+    100% {
+        background-position: 0 0;
+    }
 }
 
 #quiz-container:after {
-  filter: blur(20px);
+    filter: blur(12px);
 }
 
 #question {
-  font-size: 18px;
-  margin: 20px 0;
-  color: #a8a5a5;
+    font-size: 18px;
+    margin: 20px 0;
+    color: #a8a5a5;
 }
 
 #quiz-form {
-  display: flex;
-  flex-direction: column;
-  align-items: space-evenly;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
 }
 
 input[type="radio"] {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 input[type="radio"]:checked {
-  background-color: #0074d9;
+    background-color: #0074d9;
 }
 
 #previous-button,
 #next-button {
-  background-color: #0074d9;
-  color: #fff;
-  border: none;
-  width: 100px;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 10px;
-  transition: background-color 0.3s;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    transition: background-color 0.3s;
 }
 
 #previous-button:hover,
 #next-button:hover {
-  background-color: #0056a4;
+    background-color: #0056a4;
 }
 
 .labels {
-  display: flex;
+    display: flex;
 }
+
 .inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: clamp(400px, 100%, 600px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(400px, 100%, 600px);
 }
+
 .input {
-  display: flex;
-  width: min-content;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    width: min-content;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 label {
-  width: 0;
-  height: 0;
-  position: absolute;
-  z-index: -1;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .label {
-  font-family: Trebuchet, sans-serif;
-  font-size: 18px;
+    font-family: Trebuchet, sans-serif;
+    font-size: 18px;
 }
