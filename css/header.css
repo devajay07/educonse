@@ -52,12 +52,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items:space-between;
+  align-items: space-between;
 }
 
-.footer-img{
-z-index: 0;    
-
+.footer-img {
+  z-index: 0;
 }
 .footer-1 {
   position: static;
@@ -210,5 +209,3 @@ z-index: 0;
   background: #fefefe;
   border-color: #125688;
 }
-
-
