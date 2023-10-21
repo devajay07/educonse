@@ -117,7 +117,7 @@ main {
   border-radius: 6px;
   box-shadow: 0 0 50px 5px rgb(15, 15, 15);
   color: white;
-  border: 6px solid transparent;
+  border: 2px solid transparent;
 
   border-image: url(/images/hollowed-boxes.svg) 40%;
   position: relative;
@@ -128,8 +128,8 @@ main {
 #quiz-container:after {
   content: "";
   position: absolute;
-  left: -2px;
-  top: -2px;
+  left: 0px;
+  top: 0px;
   background: linear-gradient(
     45deg,
     #fb0094,
@@ -156,7 +156,7 @@ main {
   }
 
   50% {
-    background-position: 500% 0;
+    background-position: 100% 0;
   }
 
   100% {
@@ -165,7 +165,7 @@ main {
 }
 
 #quiz-container:after {
-  filter: blur(50px);
+  filter: blur(20px);
 }
 
 #question {
