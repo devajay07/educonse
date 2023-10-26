@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   bookSessionButton.addEventListener("click", function () {
     // Display the loading screen
     loadingScreen.style.display = "flex";
+    ;
 
     // Simulate a delay for demonstration purposes
     setTimeout(function () {
@@ -41,7 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
         requestAnimationFrame(step);
       } else {
         window.scrollTo(0, targetY);
-      }
+        const video_intro=document.getElementById("intro-video");
+    video_intro.autoplay=true;
+    video_intro.play();
+
+  }
     }
 
     requestAnimationFrame(step);
