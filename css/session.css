@@ -23,6 +23,10 @@ body {
   width: 35%;
   height: 100%;
 }
+.container video {
+  width: 50%;
+  height: 50%;
+}
 
 .container .details {
   display: flex;
@@ -96,7 +100,7 @@ body {
 }
 
 .meeting-info {
-  background-color: rgb(248, 230, 230);
+  background-color: white;
   padding: 20px;
   border-radius: 6px;
   box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.1);
@@ -140,4 +144,55 @@ body {
 .mentor-info ul li {
   padding: 0.5rem;
   list-style: none;
+}
+.talk-bubble {
+  margin: 40px;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  background-color: var(--brand-color);
+  color: white;
+}
+
+.tri-right.left-top:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  right: auto;
+  top: 0px;
+  bottom: auto;
+  border: 22px solid;
+  border-color: var(--brand-color) transparent transparent transparent;
+}
+.talktext {
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+.talktext p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+.responses {
+  display: flex;
+}
+.option {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: aquamarine;
+  font-size: 1rem;
+  color: black;
+  border: none;
+  scale: 0.9;
+  transition: scale 0.3s;
+  border-radius: 4px;
+}
+.responses button:hover {
+  scale: 1;
 }

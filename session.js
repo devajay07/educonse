@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
       bookSessionButton.style.backgroundColor = "grey";
       bookSessionButton.style.cursor = "not-allowed";
       const scrollY = window.scrollY;
-      const targetY = scrollY + 400;
+      const targetY = scrollY + 1500;
       scrollToY(targetY, 1000); // Adjust the duration (1000ms) as needed
-    }, 3500); // Replace 3000 with the actual confirmation process duration
+    }, 300); // Replace 3000 with the actual confirmation process duration
   });
 
   function scrollToY(targetY, duration) {
